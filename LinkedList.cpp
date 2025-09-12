@@ -1,7 +1,11 @@
 #include <iostream>
 
 using namespace std;
-
+Struct node{
+int info;
+node *next;
+node : info(0),next(nullptr) {}
+node(int
 void traverse(Node *head)
 {
 }
