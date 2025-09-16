@@ -14,6 +14,24 @@ void insertBeg(Node *&head, int info)
 }
 void insertLast(Node *&head, int info)
 {
+void insertBeg(Node *&head,int info)
+{
+    Node *newNode = new Node(info);
+    newNode->next = head;
+    head = newNode;
+}
+void insertLast(Node *&head,int info)
+{
+    Node *newNode = newNode(info);
+    if(head == nullptr)
+    {
+        head = newNode;
+        return;
+    }
+    Node *temp = head;
+    while(temp->next != nullptr)
+        temp =temp->next;
+    temp->next = newNode;
 }
 Node *search(Node *&head, int data)
 {
