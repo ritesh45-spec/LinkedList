@@ -38,7 +38,13 @@ Node *search(Node *&head, int data)
 }
 void insertAfter(Node *&head, int data, int info)
 {
-}
+    Node *temp = search(head,data);
+    if(temp == nullptr)
+    {
+        cout<<data <<"not Found"<<endl;
+        return;
+    }
+
 
 void removeBeg(Node *&head)
 {
